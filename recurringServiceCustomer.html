@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.bettertermite.com/wp-content/uploads/2020/09/better-termite-favicon-125x125.png" sizes="32x32">
+</head>
+<body>
+    <div class="header grayHeader"></div>
+    
+    <div class="header row">
+        <div class="headerColumn" id="pageName"><h1>Better Termite Price Calculator</h1>
+        <p>This page should be usd for calculating pricing for people who have recurring services with us.</p>
+        <div class ="navbar">
+            <a href="recurringServiceCustomer.html" class="navbarItem">Customer with Recurring Services</a>
+            <span> | </span>
+            <a href="warrantyCalculator.html" class="navbarItem">Customer with Warranty</a>
+            <span> | </span>
+            <a href="newCustomerCalculator.html" class="navbarItem">New Customer</a>
+        </div>
+        </div>
+        <div class="headerColumn" id="logo"><img src="better-logo.jpeg"></div>
+    </div>
+    
+    <div id="recurringServiceForm" class="row">
+        <h2>Recurring Service Form</h2>
+        <p>Please fill out the form below for customers wtih a recurring service with us.</p>
+        <div class="column">
+            <h4>Customer Information</h5>
+                <div class="rendered-form">
+                    <div class="formbuilder-select form-group field-service">
+                        <label for="service" class="formbuilder-select-label">Current Service Level<span class="formbuilder-required">*</span><span class="tooltip-element" tooltip="What type of warranty do they have?">?</span></label>
+                        <select class="form-control" name="service" id="service" required="required" aria-required="true">
+                            <option value="" selected="true" id="service-blank"></option>
+                            <option value="ALL" id="service-0">ALL</option>
+                            <option value="ALL STAR" id="service-1">ALL STAR</option>
+                            <option value="CASTLE" id="service-2">CASTLE</option>
+                            <option value="CASTLE PLUS" id="service-3">CASTLE PLUS</option>
+                            <option value="QPC" id="service-4">QPC</option>
+                            <option value="BIM" id="service-5">BIM</option>
+                            <option value="MOS" id="service-6">MOS</option>
+                            <option value="MOQ" id="service-7">MOQ</option>
+                            <option value="LS" id="service-8">LS</option>
+                            <option value="IN2" id="service-9">IN2</option>
+                        </select>
+                    </div>
+                    
+                    <div class="formbuilder-text form-group field-renewalFee">
+                        <label for="renewalFee" class="formbuilder-text-label">Current Per Service Fee<span class="formbuilder-required">*</span><span class="tooltip-element" tooltip="How much would it cost to renew their termite warranty?">?</span></label>
+                        <input type="text" class="form-control" name="renewalFee" access="false" id="serviceFee" title="How much would it cost to renew their termite warranty?" required="required" aria-required="true">
+                    </div>
+                    <div style="margin-top: 10px;" class="formbuilder-radio-group form-group field-isBuilderWarranty" id="isActive">
+                        <label for="isActive" class="formbuilder-radio-group-label pad"><span data-sheets-value="{" 1 ":2,"2 ":"had="" a="" wtr,="" per,="" ptr="" in="" the="" past? "}"="" data-sheets-userformat="{" 2 ":529,"3 ":{"1 ":0},"7 ":{"1 ":[{"1 ":2,"2 ":0,"5 ":{"1 ":2,"2 ":0}},{"1 ":0,"2 ":0,"3 ":3},{"1 ":1,"2 ":0,"4 ":1}]},"12 ":0}"="" >Currently active</span><span class="tooltip-element" tooltip="Did they have a builder warranty at some point?">?</span></label>
+                        <div class="radio-group">
+                            <div class="formbuilder-radio-inline">
+                                <input name="isActive" access="false" id="" value="True" type="radio">
+                                <label for="isActive-0">Yes</label>
+                            </div>
+                            <div class="formbuilder-radio-inline">
+                                <input name="isActive" access="false" id="" value="False" type="radio">
+                                <label for="isActive-1">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;" class="formbuilder-radio-group form-group field-4" id="hasTermite">
+                        <label for="hasTermite" class="formbuilder-radio-group-label pad"><span data-sheets-value="{" 1 ":2,"2 ":"had="" a="" wtr,="" per,="" ptr="" in="" the="" past? "}"="" data-sheets-userformat="{" 2 ":529,"3 ":{"1 ":0},"7 ":{"1 ":[{"1 ":2,"2 ":0,"5 ":{"1 ":2,"2 ":0}},{"1 ":0,"2 ":0,"3 ":3},{"1 ":1,"2 ":0,"4 ":1}]},"12 ":0}"="" >Do they currently have termites included in any of their plans</span><span class="tooltip-element" tooltip="Did they have a builder warranty at some point?">?</span></label>
+                        <div class="radio-group">
+                            <div class="formbuilder-radio-inline">
+                                <input name="hasTermite" access="false" id="isActive" value="True" type="radio">
+                                <label for="hasTermite-0">Yes</label>
+                            </div>
+                            <div class="formbuilder-radio-inline">
+                                <input name="hasTermite" access="false" id="isActive" value="False" type="radio">
+                                <label for="hasTermite-1">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="column">
+            <h4>Home Information</h4>
+            <div class="rendered-form">
+                <div class="formbuilder-text form-group field-size">
+                    <label for="size" class="formbuilder-text-label">Square Feet<span class="tooltip-element" tooltip="How many square feet is the home? (number in feet)">?</span></label>
+                    <input type="text" class="form-control" name="size" access="false" id="size" title="How many square feet is the home? (number in feet)">
+                </div>
+                <div class="formbuilder-text form-group field-buildDate">
+                    <label for="buildDate" class="formbuilder-text-label">Build Year<span class="formbuilder-required">*</span><span class="tooltip-element" tooltip="What year was the home built?">?</span></label>
+                    <input type="text" class="form-control" name="buildDate" access="false" id="buildDate" title="What year was the home built?" required="required" aria-required="true">
+                </div>
+                <div class="formbuilder-select form-group field-homeType">
+                    <label for="homeType" class="formbuilder-select-label">Home Type<span class="formbuilder-required">*</span></label>
+                    <select class="form-control" name="homeType" id="homeType" required="required" aria-required="true">
+                        <option value="" selected="true" id="homeType-0"></option>
+                        <option value="SF" id="homeType-0">Single Family Home</option>
+                        <option value="TH" id="homeType-1">Townhome</option>
+                    </select>
+                </div>
+                <p>Issue Type</p>
+                <div class="formbuilder-checkbox-group form-group field-issues">
+                    <div class="checkbox-group" id="issuesContainer">
+                        <div class="formbuilder-checkbox">
+                            <input name="issues[]" access="false" id="issues-0" required="required" aria-required="true" value="Mosquito" type="checkbox">
+                            <label for="issues-0">Mosquito</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input name="issues[]" access="false" id="issues-1" required="required" aria-required="true" value="Termite" type="checkbox">
+                            <label for="issues-1">Termite</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input name="issues[]" access="false" id="issues-2" required="required" aria-required="true" value="Pest" type="checkbox">
+                            <label for="issues-2">Pest</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input name="issues[]" access="false" id="issues-3" required="required" aria-required="true" value="Not Ground Level Wasps" type="checkbox">
+                            <label for="issues-3">Not Ground Level Wasps</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input name="issues[]" access="false" id="issues-4" required="required" aria-required="true" value="Ground Level Wasps" type="checkbox">
+                            <label for="issues-4">Ground Level Wasps</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="formbuilder-select form-group field-severity">
+                    <label for="severity" class="formbuilder-select-label">Issue Severity<span class="formbuilder-required">*</span></label>
+                    <select class="form-control" name="severity" id="severity" required="required" aria-required="true">
+                        <option value="" selected="true" id="severity-0"></option>
+                        <option value="High" id="severity-0">High</option>
+                        <option value="Medium" id="severity-1">Medium</option>
+                        <option value="Low" id="severity-2">Low</option>
+                    </select>
+                </div>
+                <div class="formbuilder-select form-group field-state">
+                    <label for="state" class="formbuilder-select-label">State<span class="formbuilder-required">*</span></label>
+                    <select class="form-control" name="state" id="state" required="required" aria-required="true">
+                        <option value="" id="state-blank"></option>
+                        <option value="MD" id="state-0">Maryland</option>
+                        <option value="VA" id="state-1">Virginia</option>
+                        <option value="DC" id="state-2">DC</option>
+                    </select>
+                </div>
+            </div> 
+
+        </div>
+        
+    </div>
+    <div class="row">
+        <a href="#" class="calculateButton" onClick="calcRecurringService()">Calculate Price</a>
+        <a href="#" class="clearButton" onClick="clearRecurringServicePage()">Clear Fields</a>
+    </div>
+    <div class="row">
+        <h3>Proposed Services</h3>
+        <div id="serviceViewBar">
+            <a href="javascript:void(0)" class="navbarItem" onClick="showServicesTable()">Proposed Service Table</a>
+            <span> | </span>
+        <a href="javascript:void(0)" class="navbarItem" onClick="showSideBySide()">Side-by-Side Comparison</a>
+        </div>
+        
+        <table id="proposedServiceTable">
+            <tr class="tableHeader">
+                <th style="width: 2%"> </th>
+                <th style="width: 6%">Obj Name</th>
+                <th style="width: 12%">Service Name</th>
+                <th style="width: 8%">Setup Fee</th>
+                <th style="width: 8%">Per Service Fee</th>
+                <th style="width: 6%">Freq</th>
+                <th style="width: 10%">Proposal Value</th>
+                <th style="width: 25%">Program Features</th>
+                <th style="width: 35%">Tags</th>
+            </tr>
+            
+            
+        </table>
+
+        <div id="sideBySideTable" class="hidden">
+            
+            
+
+        </div>
+    </div>
+    <div class="row footer"></div>
+    <script src="calculator.js"></script>
+
+</body>
+</html>

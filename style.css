@@ -1,0 +1,419 @@
+
+.header {
+    width: 100%;
+}
+
+select, input, .radio-group {
+    margin: 5px;
+    font-size: 14px;
+}
+
+img {
+    float: right;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+    height: 200%;
+}
+
+
+.column {
+    float: left;
+    width: 43%;
+    background-color:rgb(232, 232, 232);
+    margin: 1%;
+    padding: 2%;
+}
+
+
+@media screen and (max-width: 850px) {
+    
+    
+}
+
+@media screen and (max-width: 850px) {
+    .mobileLogo {
+        margin: 0 auto;
+        float:none;
+        display: flex !important;
+        justify-content: center;
+    }
+    #desktopLogo {
+        display: none !important;
+    }
+    h1, .navbar, h2 {
+        text-align: center;
+    }
+    .row {
+        padding: 0px;
+        justify-content: center;
+        width: 900px;
+    }
+    .header {
+        width: 650px !important;
+    }
+
+    .row > .headerColumn {
+        width: 400px;
+        margin: 0 auto !important;
+    }
+    .column {
+        width: 92% !important;
+    }
+
+}
+
+.mobileLogo {
+    display: none;
+}
+
+.grayHeader {
+    width: 100%;
+    margin: 0px;
+    background-color:rgb(58, 58, 58);
+    height: 10px;
+}
+
+.headerColumn {
+    float: left;
+    padding: 0.5%;
+}
+
+.row {
+    float: left;
+    padding: 0% 1.0%;
+    width: 100%;
+}
+
+#pageName {
+    width: 70%;
+}
+
+#logo {
+    width: 15%;
+    float: left;
+}
+
+table {
+    border-color: grey;
+    margin: 0px;
+    border-collapse: collapse;
+
+}
+
+th {
+    padding: 1.5% 2%;
+    background-color: rgb(232, 232, 232);
+    width:fit-content;
+    font-size: 14px;
+    margin: 0px;
+    text-align: left;
+}
+
+.tableContents td {
+    font-size: 15px;
+    padding: 1.5%;
+    
+}
+
+td, th {
+    border: 1px solid black;
+    
+
+}
+
+td {
+    padding: 0.5% 1.5%;
+}
+
+tr {
+    padding: 0px;
+    margin: 0px;
+}
+
+.calculateButton {
+	background-color:#77bdc9;
+	border-radius:10px;
+	border:1px solid white;
+	cursor:pointer;
+	color:#ffffff !important;
+	font-family:Arial;
+	font-size:16px;
+	padding:15px 20px;
+	text-decoration:none;
+    float: right;
+    margin-right: 3%;
+    font-weight:bold;
+    
+}
+
+
+
+#searchAddress {
+	background-color:#77bdc9;
+	border-radius:10px;
+	border:1px solid white;
+	cursor:pointer;
+	color:#ffffff !important;
+	font-family:Arial;
+	font-size:12px;
+	padding:10px 15px;
+	text-decoration:none;
+    float: left;
+    margin-right: 3%;
+    font-weight:bold;
+    margin-top: 2px;
+    width: 12%;
+    text-align: center;
+}
+
+#addressLabel {
+    display: block;
+    margin-left: 10px;
+}
+
+#address {
+    float: left;
+}
+
+.calculateButton:hover {
+	background-color: #598b94;
+}
+.calculateButton:active {
+	position:relative;
+	top:1px;
+}
+
+.clearButton {
+	background-color: white;
+	border-radius:10px;
+	border:1px solid #77bdc9;
+	cursor:pointer;
+	color: black !important;
+	font-family:Arial;
+	font-size:16px;
+	padding:15px 20px;
+	text-decoration:none;
+    float: right;
+    margin-right: 10px;
+    font-weight:bold
+}
+.clearButton:hover {
+	background-color: rgb(248, 248, 248);
+}
+.clearButton:active {
+	position:relative;
+	top:1px;
+}
+
+.formbuilder-checkbox {
+    float: left;
+    width: 33%;
+    min-width:  220px;
+}
+
+.form-group {
+    float: left;
+    width: 100%;
+}
+
+.footer {
+    height: 300px;
+    background-color:rgb(58, 58, 58);
+    margin-top: 150px;
+    width: 98%;
+}
+table {
+    width: 97%;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: teal; 
+   }
+a {
+    text-decoration: none; 
+    color: teal; 
+}
+
+.tag {
+    border-color: rgb(185, 185, 185);
+    border-style: hidden;
+    border-width: 2px;
+    float: left;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 11px;
+    margin: 2px;
+    color: white;
+}
+
+.serviceCheckbox {
+    margin: 0 auto;
+}
+
+tr.serviceRow:hover {
+    background-color: rgb(245, 245, 245);
+    border-width: 2px !important;
+    border-style: solid;
+
+}
+
+.checkboxContainer {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#serviceViewBar {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+    height: 0px !important;
+    width: 0px !important;
+}
+
+.errorRow {
+    width: 92%;
+    padding: 2%;
+    text-align: center;
+    background-color: rgba(235, 137, 137, 0.808);
+    border:rgb(58, 58, 58) solid 2px;
+    margin-bottom: 2%;
+}
+
+
+
+.sideBySideTableHeader {
+    text-align: center;
+    padding: 2%;
+}
+
+.sideBySideCells {
+    padding: 10px;
+    border-right: black solid 1px;
+    border-left: black solid 1px;
+    border-bottom: none;
+    border-top: none;
+}
+
+.highlightedTag{
+    border-color:red;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0px !important;
+}
+
+
+.bottomCell {
+    border-bottom: black solid 1px;
+    border-right: black solid 1px;
+    border-left: black solid 1px;
+}
+
+.pestCell {
+    padding: 20px;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+.tagContainer {
+    vertical-align: top;
+}
+
+.sideBySideCells {
+    vertical-align: top;
+}
+
+.sideBySideFeatureList ul {
+    list-style: none;
+    padding: 40px;
+  }
+  
+  .sideBySideFeatureList ul li:before {
+    content: '✓   ';
+  }
+
+
+  .sideBySideFeatureList ul li {
+      margin: 5px;
+  }
+
+  .blur {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+  }
+
+  /* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+  #address {
+      width: 78%;
+      height: 25px;
+      border-radius: 5px;
+  }
+
+  .doesIncludeList {
+    list-style: none;
+    padding: 0px 20px;
+  }
+  
+  .doesIncludeBullet:before {
+    content: '✓   ';
+    color: green;
+    font-weight: bolder;
+  }
+
+  .doesNotIncludeList {
+    list-style: none;
+    padding: 0px 20px;
+  }
+  
+  .doesNotIncludeBullet:before {
+    content: 'X   ';
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  .doesNotIncludeBullet, .doesIncludeBullet {
+    font-size: 18px;
+  }
+
+  .featureCell {
+      padding: 0px;
+  }
+
+  .underline {
+    text-decoration: none; 
+    border-bottom:2px solid;
+  }
+
+  .underline.red {
+      color: red;
+      
+  }
+
+  .underline.green {
+    color: green;
+    font-weight: bold;
+}
+
+.errorList {
+    text-align: left;
+}
